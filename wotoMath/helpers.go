@@ -295,6 +295,160 @@ func NewVector2UInt64(x uint64, y uint64) *Vector2UInt64 {
 	return &Vector2UInt64{X: x, Y: y}
 }
 
+func NewRectangle(x, y, width, height float64) *Rectangle {
+	return &Rectangle{
+		Location: Vector2{X: x, Y: y},
+		Size:     Vector2{X: width, Y: height},
+	}
+}
+
+func NewRectangleVect(location, size Vector2) *Rectangle {
+	return &Rectangle{
+		Location: location,
+		Size:     size,
+	}
+}
+
+func NewRectangleInt(x, y, width, height int) *RectangleInt {
+	return &RectangleInt{
+		Location: Vector2Int{X: x, Y: y},
+		Size:     Vector2Int{X: width, Y: height},
+	}
+}
+
+func NewRectangleUInt(x, y, width, height uint) *RectangleUInt {
+	return &RectangleUInt{
+		Location: Vector2UInt{X: x, Y: y},
+		Size:     Vector2UInt{X: width, Y: height},
+	}
+}
+
+func NewRectangleIntVector(location, size Vector2Int) *RectangleInt {
+	return &RectangleInt{
+		Location: location,
+		Size:     size,
+	}
+}
+
+func NewRectangleUIntVector(location, size Vector2UInt) *RectangleUInt {
+	return &RectangleUInt{
+		Location: location,
+		Size:     size,
+	}
+}
+
+func NewRectangleInt8(x, y, width, height int8) *RectangleInt8 {
+	return &RectangleInt8{
+		Location: Vector2Int8{X: x, Y: y},
+		Size:     Vector2Int8{X: width, Y: height},
+	}
+}
+
+func NewRectangleUInt8(x, y, width, height uint8) *RectangleUInt8 {
+	return &RectangleUInt8{
+		Location: Vector2UInt8{X: x, Y: y},
+		Size:     Vector2UInt8{X: width, Y: height},
+	}
+}
+
+func NewRectangleInt8Vector(location, size Vector2Int8) *RectangleInt8 {
+	return &RectangleInt8{
+		Location: location,
+		Size:     size,
+	}
+}
+
+func NewRectangleUInt8Vector(location, size Vector2UInt8) *RectangleUInt8 {
+	return &RectangleUInt8{
+		Location: location,
+		Size:     size,
+	}
+}
+
+func NewRectangleInt16(x, y, width, height int16) *RectangleInt16 {
+	return &RectangleInt16{
+		Location: Vector2Int16{X: x, Y: y},
+		Size:     Vector2Int16{X: width, Y: height},
+	}
+}
+
+func NewRectangleUInt16(x, y, width, height uint16) *RectangleUInt16 {
+	return &RectangleUInt16{
+		Location: Vector2UInt16{X: x, Y: y},
+		Size:     Vector2UInt16{X: width, Y: height},
+	}
+}
+
+func NewRectangleInt16Vector(location, size Vector2Int16) *RectangleInt16 {
+	return &RectangleInt16{
+		Location: location,
+		Size:     size,
+	}
+}
+
+func NewRectangleUInt16Vector(location, size Vector2UInt16) *RectangleUInt16 {
+	return &RectangleUInt16{
+		Location: location,
+		Size:     size,
+	}
+}
+
+func NewRectangleInt32(x, y, width, height int32) *RectangleInt32 {
+	return &RectangleInt32{
+		Location: Vector2Int32{X: x, Y: y},
+		Size:     Vector2Int32{X: width, Y: height},
+	}
+}
+
+func NewRectangleUInt32(x, y, width, height uint32) *RectangleUInt32 {
+	return &RectangleUInt32{
+		Location: Vector2UInt32{X: x, Y: y},
+		Size:     Vector2UInt32{X: width, Y: height},
+	}
+}
+
+func NewRectangleInt32Vector(location, size Vector2Int32) *RectangleInt32 {
+	return &RectangleInt32{
+		Location: location,
+		Size:     size,
+	}
+}
+
+func NewRectangleUInt32Vector(location, size Vector2UInt32) *RectangleUInt32 {
+	return &RectangleUInt32{
+		Location: location,
+		Size:     size,
+	}
+}
+
+func NewRectangleInt64(x, y, width, height int64) *RectangleInt64 {
+	return &RectangleInt64{
+		Location: Vector2Int64{X: x, Y: y},
+		Size:     Vector2Int64{X: width, Y: height},
+	}
+}
+
+func NewRectangleUInt64(x, y, width, height uint64) *RectangleUInt64 {
+	return &RectangleUInt64{
+		Location: Vector2UInt64{X: x, Y: y},
+		Size:     Vector2UInt64{X: width, Y: height},
+	}
+}
+
+func NewRectangleInt64Vector(location, size Vector2Int64) *RectangleInt64 {
+	return &RectangleInt64{
+		Location: location,
+		Size:     size,
+	}
+}
+
+func NewRectangleUInt64Vector(location, size Vector2UInt64) *RectangleUInt64 {
+	return &RectangleUInt64{
+		Location: location,
+		Size:     size,
+	}
+}
+
 //---------------------------------------------------------
 
 func Dot(ihs *Vector2, rhs *Vector2) float64 {

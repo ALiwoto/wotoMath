@@ -143,6 +143,17 @@ func TestVectorInt01(t *testing.T) {
 }
 
 //---------------------------------------------------------
+
+func TestRectangle01(t *testing.T) {
+	rect1 := wotoMath.NewRectangle(0, 0, 10, 10)
+	rect2 := wotoMath.NewRectangle(5, 5, 10, 10)
+
+	if !rect1.Contains(*rect2) {
+		t.Error("rect1 should contain rect2; but Contains methor returned false")
+		return
+	}
+}
+
 //---------------------------------------------------------
 //---------------------------------------------------------
 //---------------------------------------------------------
