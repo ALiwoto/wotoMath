@@ -259,6 +259,42 @@ func NewVector2Int(x int, y int) *Vector2Int {
 	return &Vector2Int{X: x, Y: y}
 }
 
+func NewVector2UInt(x uint, y uint) *Vector2UInt {
+	return &Vector2UInt{X: x, Y: y}
+}
+
+func NewVector2Int8(x int8, y int8) *Vector2Int8 {
+	return &Vector2Int8{X: x, Y: y}
+}
+
+func NewVector2UInt8(x uint8, y uint8) *Vector2UInt8 {
+	return &Vector2UInt8{X: x, Y: y}
+}
+
+func NewVector2Int16(x int16, y int16) *Vector2Int16 {
+	return &Vector2Int16{X: x, Y: y}
+}
+
+func NewVector2UInt16(x uint16, y uint16) *Vector2UInt16 {
+	return &Vector2UInt16{X: x, Y: y}
+}
+
+func NewVector2Int32(x int32, y int32) *Vector2Int32 {
+	return &Vector2Int32{X: x, Y: y}
+}
+
+func NewVector2UInt32(x uint32, y uint32) *Vector2UInt32 {
+	return &Vector2UInt32{X: x, Y: y}
+}
+
+func NewVector2Int64(x int64, y int64) *Vector2Int64 {
+	return &Vector2Int64{X: x, Y: y}
+}
+
+func NewVector2UInt64(x uint64, y uint64) *Vector2UInt64 {
+	return &Vector2UInt64{X: x, Y: y}
+}
+
 //---------------------------------------------------------
 
 func Dot(ihs *Vector2, rhs *Vector2) float64 {
